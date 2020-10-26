@@ -122,7 +122,7 @@ class LoginView extends StatelessWidget {
                 SizedBox(height: 20.0),
                 _crearBotonIngresar(bloc),
                 SizedBox(height: 10.0),
-                _crearBotonRegistrar(),
+                _crearBotonRegistrar(context),
 
               ],
             ),
@@ -200,7 +200,7 @@ class LoginView extends StatelessWidget {
     
   }
 
-  Widget _crearBotonRegistrar() {    
+  Widget _crearBotonRegistrar(BuildContext context) {    
     return OutlineButton (
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 65.0, vertical: 0.0),
@@ -211,12 +211,15 @@ class LoginView extends StatelessWidget {
       ),          
       color: Color(0XFF26ADC1),
       textColor: Colors.white,
-      onPressed: (){},
+      onPressed: (){
+        //Navigator.pushReplacementNamed(context, 'home');
+        Navigator.pushNamed(context, 'addUser');
+      },
     );
   }
 
   _login(LoginBloc bloc, BuildContext context) async {
-        
+
     UsuarioModel model = new UsuarioModel();
     model.nombreUsuario = bloc.username;
     model.clave = bloc.password;

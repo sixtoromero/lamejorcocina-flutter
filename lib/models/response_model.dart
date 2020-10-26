@@ -4,18 +4,18 @@ ResponseModel responseModelFromJson(String str) => ResponseModel.fromJson(json.d
 
 String responseModelToJson(ResponseModel data) => json.encode(data.toJson());
 
-class ResponseModel {
+class ResponseModel<T> {
     ResponseModel({
         this.data,
         this.isSuccess,
         this.message,
     });
 
-    dynamic data;
+    T data;
     bool isSuccess;
     String message;
 
-    factory ResponseModel.fromJson(Map<String, dynamic> json) => ResponseModel(
+    factory ResponseModel.fromJson(Map<T, dynamic> json) => ResponseModel(
         data: json["Data"],
         isSuccess: json["IsSuccess"],
         message: json["Message"],

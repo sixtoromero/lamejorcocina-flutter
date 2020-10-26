@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:lamejorcocina/models/cocinero_model.dart';
 
 class ChefProvider {
-  final String _url = 'http://5cf0e071e976.ngrok.io';
+  final String _url = 'http://94d069513ca0.ngrok.io';
 
   Future<List<CocineroModel>> getAllAsync() async {
 
