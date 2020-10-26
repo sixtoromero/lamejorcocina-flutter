@@ -1,0 +1,31 @@
+{
+    "nombreApp": "La Mejor Cocina",
+    "rutas" : [
+        {
+            "ruta" : "home",
+            "icon" : "auto_awesome_mosaic",
+            "texto": "Principal"
+        },
+        {
+            "ruta" : "Clientes",
+            "icon" : "person",
+            "texto": "Cocineros"
+        },
+        {
+            "ruta" : "Cocineros",
+            "icon" : "assignment_ind_outlined",
+            "texto": "Cocineros"
+        },
+        {
+            "ruta" : "Camareros",
+            "icon" : "assignment_ind_roundeds",
+            "texto": "Camareros"
+        },
+        {
+            "ruta" : "Mesas",
+            "icon" : "backup_table",
+            "texto": "Mesas"
+        }
+
+    ]
+}
